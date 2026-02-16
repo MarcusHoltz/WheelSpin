@@ -408,7 +408,7 @@ $botToken = generateBotToken();
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Holtzweb - Spin Wheel</title>
-  <link rel="stylesheet" href="./inc/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
@@ -740,7 +740,7 @@ $botToken = generateBotToken();
     </a>
   </footer>
 
-  <script src="./inc/spin-wheel-iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/spin-wheel@5.0.2/dist/spin-wheel-iife.js"></script>
   <script>
     console.log('Script loaded');
 
