@@ -2,7 +2,7 @@
 /******************************************************************************
  * WHEELSPIN - Secure Self-Hosted Spinning Wheel Application
  *
- * Made for: https://github.com/CrazyTim/spin-wheel
+ * Created with: https://github.com/CrazyTim/spin-wheel
  * Documentation: See README.md in github.com/MarcusHoltz/WheelSpin/
  *
  ******************************************************************************/
@@ -407,8 +407,9 @@ $botToken = generateBotToken();
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Holtzweb - Spin Wheel</title>
+  <title>Holtzweb - WheelSpin</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="./inc/bootstrap.min.css" /> -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
@@ -603,7 +604,7 @@ $botToken = generateBotToken();
       border-radius: 25px;
       cursor: pointer;
       transition: all 0.3s;
-      z-index: 20099922;
+      z-index: 20092;
     }
 
     .real-confirm-btn:hover {
@@ -643,6 +644,7 @@ $botToken = generateBotToken();
       color: white;
       text-align: center;
       padding: 15px;
+      z-index: 22345;
     }
 
     footer img {
@@ -736,11 +738,12 @@ $botToken = generateBotToken();
   <footer>
     <a href="https://www.holtzweb.com">
       <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMjMwLjAwMDAwMHB0IiBoZWlnaHQ9IjE2Mi4wMDAwMDBwdCIgdmlld0JveD0iMCAwIDIzMC4wMDAwMDAgMTYyLjAwMDAwMCIKIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPgoKPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsMTYyLjAwMDAwMCkgc2NhbGUoMC4xMDAwMDAsLTAuMTAwMDAwKSIKZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSJub25lIj4KPHBhdGggZD0iTTE5MCAxMDcwIGwwIC00MDAgLTQwIDAgLTQwIDAgMCA4NSBjMCA4NCAwIDg1IC0yNSA4NSBsLTI1IDAgMCAtMTk1CjAgLTE5NSAyNSAwIGMyNSAwIDI1IDEgMjUgODUgbDAgODUgNDAgMCA0MCAwIDAgLTIzNSAwIC0yMzUgMTAzMCAwIDEwMzAgMCAwCjY2MCAwIDY2MCAtMTAzMCAwIC0xMDMwIDAgMCAtNDAweiBtMjAxMCAtMjYwIGwwIC02MTAgLTk4MCAwIC05ODAgMCAwIDEyNSBjMAo3NyA0IDEyNSAxMCAxMjUgNiAwIDEwIDcyIDEwIDE5NSAwIDEyMyAtNCAxOTUgLTEwIDE5NSAtNiAwIC0xMCAxMDMgLTEwIDI5MApsMCAyOTAgOTgwIDAgOTgwIDAgMCAtNjEweiIvPgo8cGF0aCBkPSJNMzczIDgxNiBjLTI3IC0yNCAtMjggLTI3IC0zMSAtMTQ2IC00IC0xNDIgMCAtMTYzIDM1IC0xOTYgMzggLTM1Cjk1IC0zMyAxMzQgNSBsMjkgMjkgMCAxMzcgMCAxMzcgLTI5IDI5IGMtMzkgMzggLTk3IDQwIC0xMzggNXogbTEwMSAtNDggYzIzCi0zMiAyMyAtMjE0IDAgLTI0NiAtMTcgLTI0IC00MyAtMjkgLTYyIC0xMCAtMTcgMTcgLTE3IDI0OSAwIDI2NiAxOSAxOSA0NSAxNAo2MiAtMTB6Ii8+CjxwYXRoIGQ9Ik02MjAgNjQ1IGwwIC0xOTUgNzAgMCBjNjggMCA3MCAxIDcwIDI1IDAgMjMgLTQgMjUgLTQwIDI1IGwtNDAgMCAwCjE3MCAwIDE3MCAtMzAgMCAtMzAgMCAwIC0xOTV6Ii8+CjxwYXRoIGQ9Ik04NTAgODE1IGMwIC0yMiA0IC0yNSAzNSAtMjUgbDM1IDAgMCAtMTcwIDAgLTE3MCAyNSAwIDI1IDAgMCAxNzAgMAoxNzAgNDAgMCBjMzYgMCA0MCAzIDQwIDI1IGwwIDI1IC0xMDAgMCAtMTAwIDAgMCAtMjV6Ii8+CjxwYXRoIGQ9Ik0xMTMwIDgxNSBjMCAtMjIgNCAtMjUgNDAgLTI1IDIyIDAgNDAgLTMgNDAgLTYgMCAtMyAtMTggLTY1IC00MAotMTM5IC0yMiAtNzQgLTQwIC0xNDggLTQwIC0xNjQgbDAgLTMxIDcwIDAgYzY4IDAgNzAgMSA3MCAyNSAwIDIzIC00IDI1IC00MAoyNSAtMjIgMCAtNDAgMyAtNDAgOCAwIDQgMTggNjggNDAgMTQyIDIyIDc0IDQwIDE0NyA0MCAxNjIgMCAyOCAwIDI4IC03MCAyOAotNjggMCAtNzAgLTEgLTcwIC0yNXoiLz4KPC9nPgo8L3N2Zz4K" alt="Holtzweb.com">
-      <span><a href="https://spin.holtzweb.com">spin.holtzweb.com</a></span>
+      <span><a href="https://www.holtzweb.com/spin">www.holtzweb.com/spin</a></span>
     </a>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/spin-wheel@5.0.2/dist/spin-wheel-iife.js"></script>
+  <!-- <script src="./inc/spin-wheel-iife.js"></script> -->
   <script>
     console.log('Script loaded');
 
